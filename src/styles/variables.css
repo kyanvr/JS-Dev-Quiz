@@ -1,0 +1,17 @@
+:root {
+    --dark-green: #2c4237;
+    --light-green: #62967d;
+    --flashy-green: #4ce099;
+    --flashy-red: #df2525;
+
+    --body-background-color: #92b1a1;
+    --primary-text-color: var(--dark-green);
+    --button-background-color: var(--primary-text-color);
+    --white: #fff;
+    --slider-background: var(--primary-text-color);
+    --slider-handle-background: var(--body-background-color);
+    --select-text-color: rgba(255, 255, 255, .9);
+    --shadow: 2px 3px 6px var(--dark-green);
+
+    --slider-border-radius: 10px;
+}

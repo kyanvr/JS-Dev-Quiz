@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevQuiz</title>
+    <link rel="stylesheet" href="./src/styles/styles.css">
+</head>
+
+<body>
+
+    <div class="parameter_container">
+        <h1 class="text-shadow-pop-tr">Set your parameters</h1>
+
+            <form>
+
+                <label for="difficulty=">Difficulty</label>
+                <select name="difficulty=" id="ddd">
+                    <option value="#" class="diff" selected>Select difficulty</option>
+                    <option value="easy" class="diff">Easy</option>
+                    <option value="medium" class="diff">Medium</option>
+                    <option value="hard" class="diff">Hard</option>
+                </select>
+
+                <label for="category=">Categories</label>
+                <select name="category=" id="ddc">
+                    <option value="#" selected>Select a category</option>
+                    <option value="linux">Linux</option>
+                    <option value="devops">DevOps</option>
+                    <option value="cms">CMS</option>
+                    <option value="code">Code</option>
+                    <option value="sql">SQL</option>
+                    <option value="docker">Docker</option>
+                    <option value="bash">BASH</option>
+                </select>
+
+                <h2>Limit</h2>
+                <div class="sliderContainer">
+                    <p><span id="output"></span> question(s)</p>
+                    <input type="range" min="1" max="20" value="10" class="slider" id="sliderRange" name="limit=">
+                </div>
+            </form>
+
+            <a href="/questions.html" id="paramLink"><button id="submitBtn" class="button grow">Start<br>Quiz</button></a>
+            <a href="index.html"><button id="stopQuiz" class="stopQuiz grow">Quit</button></a>
+    </div>
+
+    <script type="module" src="./src/parameters.js"></script>
+</body>
+
+</html>
